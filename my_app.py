@@ -6,7 +6,7 @@ data = pd.read_csv('C:\\Users\\shahi\\OneDrive\\Desktop\\App\\MLE-Assignment.csv
 ds = pd.DataFrame(data)
 
 # Streamlit UI
-st.title("🌽 Corn Mycotoxin (DON) Prediction 🚜")
+st.title(" Corn Mycotoxin (DON) Prediction ")
 st.write("Enter spectral reflectance values to predict DON concentration.")
 
 # Number of features
@@ -41,9 +41,9 @@ if st.button("🔍 Predict DON Concentration"):
         
         if response.status_code == 200:
             prediction = response.json().get("predicted_don_concentration")
-            st.success(f"🌟 Predicted DON Concentration: {prediction:.2f} ppb")
+            st.success(f" Predicted DON Concentration: {prediction:.2f} ppb")
         else:
-            st.error("⚠️ Error in prediction. Check API.")
+            st.error(" Error in prediction. Check API.")
     
     except requests.exceptions.ConnectionError:
-        st.error("🚨 Unable to connect to the FastAPI server. Make sure it's running!")
+        st.error(" Unable to connect to the FastAPI server. Make sure it's running!")
