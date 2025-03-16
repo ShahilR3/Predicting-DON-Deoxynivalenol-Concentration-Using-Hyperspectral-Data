@@ -1,0 +1,13 @@
+fastapi
+streamlit
+scikit-learn
+pandas
+numpy
+tensorflow
+torch
+uvicorn
+matplotlib
+seaborn
+pydantic
+optuna
+altair
